@@ -1,0 +1,38 @@
+:root {
+  /* Définition des variables de couleur pour uniformiser le style de la page */
+  --color-texte-titre: #ff0000;
+  --color-background-1: #aaaaaa;
+  --color-div-border: black;
+}
+
+body { 
+  margin: 0;
+  padding: 0; 
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  color: green;
+}
+
+#barre-titre {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  border-bottom: 2px solid var(--color-div-border);
+  background-color: var(--color-background-1);
+}
+
+#barre-titre-texte { 
+  box-sizing: border-box;
+  text-align: right;
+  margin: 20px;
+  color: var(--color-texte-titre);
+}
+
+#barre-titre-image {
+  margin: 10px;
+}
