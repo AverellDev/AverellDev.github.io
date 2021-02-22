@@ -1,0 +1,121 @@
+:root {
+  /* Définition des variables pour uniformiser le style des pages et faciliter les éventuelles modifications*/
+    --color-text-1: #d6ce15;
+    --color-text-2: #a4a71e;
+    --color-text-3: #ffffff;
+    --color-text-highlight: #e6de35;
+    --color-background-1: #062607;
+    --color-background-2: #125c16;
+    --color-div-border: #d6ce15;
+}
+
+/* POLICES */
+
+@font-face {
+    font-family: police1;
+    src: url("../_assets/fonts/font-azonix.otf");
+}
+/* GLOBAL */
+
+body { 
+    background-color : var(--color-background-1);
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--color-text-1);
+    font-family: police1;
+}
+
+h2 {
+    color: var(--color-text-2);
+    font-family: police1;
+}
+
+h3 {
+    color: var(--color-text-3);
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: Verdana;
+}
+
+/* BARRE DE NAVIGATION (HAUT) */
+
+#barre-nav {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    background: var(--color-background-2);
+    border-bottom: 4px solid var(--color-div-border);
+}
+
+#barre-nav-image {
+    margin: 0px;
+}
+#barre-nav-titre { 
+    font-size: 40px;
+    font-family: police1;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: var(--color-text-1);
+}
+
+#barre-nav-liste {
+    list-style: none;
+}
+
+.barre-nav-element {
+    display: inline;
+    font-family: police2;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+a {
+    color: var(--color-text-1);
+}
+
+a:hover {
+    color: var(--color-text-highlight);
+}
+
+
+/* CONTENU (CENTRE) */
+
+#page-contenu {
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* BARRE DE PIED DE PAGE (BAS)*/
+
+#barre-bas {
+    display: flex;
+    border-top: 4px solid var(--color-div-border);
+    justify-content: center;
+    background:var(--color-background-2);
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#barre-bas-scroll { /* Barre du bas spéciale : au lieu d'être fixée en bas de la page, il faut scroller tout en bas pour l'atteindre (utile lorsque le contenu est plus grand que la page) */
+    display: flex;
+    border-top: 4px solid var(--color-div-border);
+    justify-content: center;
+    background:var(--color-background-2);
+    align-items: center;
+    margin: 0px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+#barre-bas-texte {
+    color: var(--color-text-1);
+}
